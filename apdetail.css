@@ -1,0 +1,162 @@
+/* General Reset */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Navbar Styling */
+.navbar {
+    background: #3498db;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar nav ul li {
+    margin-left: 20px;
+}
+
+.navbar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: background 0.3s ease;
+}
+
+.navbar nav ul li a:hover,
+.navbar nav ul li a.active {
+    background: #2980b9;
+    border-radius: 5px;
+}
+
+.logo img {
+    height: 40px;
+    vertical-align: middle;
+}
+
+.logo {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Appointments Section */
+.appointments-container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.appointments-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #2c3e50;
+    text-align: center;
+}
+
+/* Appointment Card */
+.appointment-card {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.appointment-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.appointment-date {
+    font-size: 18px;
+    color: #3498db;
+    font-weight: bold;
+}
+
+.appointment-time {
+    background: #3498db;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Appointment Details */
+.appointment-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.detail-group {
+    flex: 1 1 calc(50% - 10px);
+    margin-bottom: 10px;
+}
+
+.detail-label {
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.detail-value {
+    color: #333;
+}
+
+.appointment-reason {
+    flex-basis: 100%;
+    margin-top: 10px;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}
+
+/* Print Button */
+.print-button {
+    background: #2ecc71;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 15px;
+    display: inline-block;
+    text-align: center;
+}
+
+.print-button:hover {
+    background: #27ae60;
+}
+
+/* No Print Styling */
+@media print {
+    .no-print {
+        display: none;
+    }
+    .appointment-card {
+        page-break-inside: avoid;
+    }
+}

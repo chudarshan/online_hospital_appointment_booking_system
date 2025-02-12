@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="form-container">
+        <!-- Login Form -->
+        <div class="form-box" id="login-box">
+            <h2>Login</h2>
+            <form action="login.php" method="post">
+                <div class="input-box">
+                    <input type="text" name="username" required>
+                    <label>Username</label>
+                </div>
+                <div class="input-box">
+                    <input type="password" name="password" required>
+                    <label>Password</label>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="bottom-text">
+                    Don't have an account? <a href="#" id="show-signup">Sign Up</a>
+                </div>
+            </form>
+        </div>
+
+        <!-- Sign-Up Form -->
+        <div class="form-box" id="signup-box" style="display: none;">
+            <h2>Sign Up</h2>
+            <form action="signup.php" method="post">
+                <div class="input-box">
+                    <input type="text" name="fullname" required>
+                    <label>Full Name</label>
+                </div>
+                <div class="input-box">
+                    <input type="text" name="username" required>
+                    <label>Username</label>
+                </div>
+                <div class="input-box">
+                    <input type="email" name="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <input type="password" name="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="input-box">
+                    <input type="password" name="confirm_password" required>
+                    <label>Confirm Password</label>
+                </div>
+                <button type="submit" class="btn">Sign Up</button>
+                <div class="bottom-text">
+                    Already have an account? <a href="#" id="show-login">Log In</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Link to external JavaScript file -->
+    <script src="login.js"></script>
+</body>
+</html>
